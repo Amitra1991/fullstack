@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>My first page</title>
+    
+    </head>
+
+    <body>
+        
+        <nav>
+            
+            <ul class = 'topnav' id = "topnav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li class="topnav_right"><a href="#">Sigh up</a></li>   
+                <li class="topnav_right"><a href="#">Sign in </a></li>
+                <li class="dropdown" onclick="drop()"><a href="#">&#9776; </a></li>
+            </ul>
+        </nav>
+        <div class="container" id="section-1-gradiant">
+
+        </div>
+
+        <script>
+
+            function drop(){
+                var x = document.getElementById('topnav');
+                if(x.className === 'topnav'){
+                    x.className += " dropmenu"
+                }
+                else{
+                    x.className="topnav";
+                }
+            }
+
+
+        </script>
+    
+    </body>
+
+
+
+
+
+</html>

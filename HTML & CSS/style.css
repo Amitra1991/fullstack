@@ -1,0 +1,91 @@
+
+/*########### Defaults ##########*/
+nav,header,footer{
+
+    display: block;
+}
+
+body{
+    line-height: 1;
+    margin: 0;
+
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+
+/*################### Nav Bar #####################*/
+
+nav{
+    width: 100%;
+    margin: 0;
+}
+
+nav ul{
+
+        background-color: thistle;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+}
+
+#section-1-gradiant{
+    background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow);
+}
+ul.topnav li {
+    list-style: none;
+    float: left;
+}
+ul.topnav li.topnav_right {
+    float: right;
+}
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    min-height: 16px;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+
+}
+ul.topnav li a:hover {
+    background-color: slateblue;
+    color: snow;
+}
+
+ul.topnav li.dropdown{
+    display: none;
+}
+
+/*######################  Mobile ############################*/
+
+@media screen and (max-width: 600px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnav li.dropdown{
+        display: block;
+        float: right;
+    }
+    ul.topnav.dropmenu li.dropdown{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    ul.topnav.dropmenu li{
+        float: none;
+        display: inline;
+    }
+    ul.topnav.dropmenu li a{
+        display: block;
+        text-align: left;
+    }
+
+}
